@@ -7,4 +7,7 @@ db.url = dbConfig.url;
 db.plats = require("./plat.model.js")(mongoose);
 db.livreurs = require("./livreur.model.js")(mongoose);
 db.restaurants = require("./restaurant.model.js")(mongoose);
+db.utilisateur = require("./utilisateur.model");
+db.role = require("./role.model");
+db.ROLES = ["client", "restaurant", "livreur", "admin"];
 module.exports = db;
