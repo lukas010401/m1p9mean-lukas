@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
@@ -22,7 +23,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
-  "engines":{
-    "node":"12.22.9"
+  "engines": {
+    "node": "12.22.9"
   }
 }
