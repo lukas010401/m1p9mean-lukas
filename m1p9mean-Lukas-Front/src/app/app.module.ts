@@ -11,6 +11,7 @@ import { ListePlatComponent } from './components/plats/liste-plat/liste-plat.com
 import { InscriptionComponent } from './components/utilisateurs/inscription/inscription.component';
 import { ConnexionComponent } from './components/utilisateurs/connexion/connexion.component';
 import { BoardAdminTestComponent } from './components/admin/board-admin-test/board-admin-test.component';
+import { ProfilComponent } from './components/utilisateurs/profil/profil.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BoardAdminTestComponent } from './components/admin/board-admin-test/boa
     ListePlatComponent,
     InscriptionComponent,
     ConnexionComponent,
-    BoardAdminTestComponent
+    BoardAdminTestComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
