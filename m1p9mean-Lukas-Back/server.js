@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 var corsOptions = {
-  origin: "https://m1p9mean-lukas-front.herokuapp.com/"
+  origin: "https://m1p9mean-lukas-front.herokuapp.com"
 };
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
