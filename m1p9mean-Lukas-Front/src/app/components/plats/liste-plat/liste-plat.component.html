@@ -27,7 +27,7 @@
                                   <h4 class="media-heading">{{plat.nom}}</h4>
                                   <p>{{plat.description}}</p>
                                   <p>{{plat.prix}} AR</p>
-                                  <button>Commander</button>
+                                  <button *ngIf="isLoggedIn">Commander</button>
                               </div>
                           </div>
                       </div><!--/.col-md-4-->

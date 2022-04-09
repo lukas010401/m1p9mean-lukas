@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Plat } from 'src/app/models/plat.model';
 import { PlatService } from 'src/app/services/plat.service';
+import { TokenStorageService } from 'src/app/services/token-storage.service';
 
 @Component({
   selector: 'app-liste-plat',
@@ -12,10 +13,12 @@ export class ListePlatComponent implements OnInit {
   currentPlat?: Plat;
   currentIndex = -1;
   nom = '';
+  isLoggedIn = false;
 
-  constructor(private platService: PlatService) { }
+  constructor(private platService: PlatService, private tokenStorageService: TokenStorageService) { }
 
   ngOnInit(): void {
+    this.isLoggedIn = !!this.tokenStorageService.getToken();
     this.retrievePlats();
   }
 
