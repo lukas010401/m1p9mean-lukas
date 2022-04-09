@@ -12,10 +12,10 @@ const app = express();
 // res.sendFile(path.join(__dirname+'/dist/m1p9mean-lukas-front/index.html'));
 // });
 
-app.use(express.static(path.join(__dirname, 'dist','m1p9mean-lukas-front')));
+app.use(express.static(path.join('m1p9mean-lukas-front', 'dist','m1p9mean-lukas-front')));
 
 app.get('/*', function(req,res) {
-    res.sendFile(path.join(__dirname,'dist','m1p9mean-lukas-front','index.html'));
+    res.sendFile(path.join('m1p9mean-lukas-front','dist','m1p9mean-lukas-front','index.html'));
 });
 
 // Start the app by listening on the default Heroku port
